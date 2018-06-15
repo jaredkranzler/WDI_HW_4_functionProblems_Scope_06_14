@@ -34,20 +34,32 @@ console.log("script works");
 // Write a function sumDigits that 
 // accepts a number and returns the sum of its digits.
 
+// finished
 const sumDigits = (num) => {
+  // turn number into string place into new variable
       const number = num.toString();
-      console.log(number);
-      const str = number.split("");
-      console.log(str);
+      // console.log(number);
+  // split the string into array
+  // turn string back in to number
+      const str = number.split("").map(Number);
+      // console.log(str); //good this far
+      //add the array together to find sum
       let sum = 0;
-      for (let i = 0; i <= str.length; i++){
-      } return parseInt(str.length))
-      //   for (
-      //       console.log(str);
+        for (let i = 0; i < str.length; i++){
+          sum += str[i]
+              // console.log(sum);
         }
-// }
+        return sum;
+}
+console.log(sumDigits(82));
 console.log(sumDigits(42));
+console.log(sumDigits(69));
 
+// Pythagoras
+
+// Write a function calculateSide that takes two arguments: 
+// sideA and sideB, and returns the solution for sideC using 
+// the Pythagorean theorem.
 
 
 
