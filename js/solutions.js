@@ -1,21 +1,35 @@
 console.log("script works");
 
 
-// What is the difference between a parameter and an argument?
-a parameter is a variable, an argument is the data 
-you pass through that parameter. 
-a Parameter is the variable being declared by a function, 
-where an argument is the actual value of the variable.
+// // What is the difference between a parameter and an argument?
+// a parameter is a variable, an argument is the data 
+// you pass through that parameter. 
+// a Parameter is the variable being declared by a function, 
+// where an argument is the actual value of the variable.
 
-// Within a function, what is the difference between 
-// return and console.log?
-console log prints the language. return actually 
-returns values from a function.
+// // Within a function, what is the difference between 
+// // return and console.log?
+// console log prints the language. return actually 
+// returns values from a function.
 
+// Palindrome
 
+const checkPalindrome = (str) => {
+  const splitString = str.split("");
+  console.log(splitString);
+  const reverseArray = splitString.reverse();
+  console.log(reverseArray);
+  const joinArray = reverseArray.join("");
+      if (str == joinArray){
+        return true;
+      } else if (str.toUpperCase() == joinArray){
+        return true;
+      }else 
+      return false;
+} 
 
-
-
+console.log(checkPalindrome("Radar".toUpperCase()));
+console.log(checkPalindrome("Borscht"));
 
 
 
